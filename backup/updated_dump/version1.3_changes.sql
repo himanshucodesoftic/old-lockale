@@ -1,0 +1,3 @@
+INSERT INTO `categories` (`categories_id`, `categories_image`, `categories_icon`, `parent_id`, `sort_order`, `date_added`, `last_modified`, `categories_slug`, `categories_status`, `created_at`, `updated_at`) VALUES ('-1', '120', '120', '0', NULL, NULL, NULL, 'uncategorized', '1', NULL, NULL);
+INSERT INTO `categories_description` (`categories_description_id`, `categories_id`, `language_id`, `categories_name`, `categories_description`) VALUES (NULL, '-1', '1', 'uncategorized', 'uncategorized'), (NULL, '-1', '2', 'uncategorized', 'uncategorized');
+ALTER TABLE `products` CHANGE `products_weight` `products_weight` VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL;
